@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/centered_card_view_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/splash_screen_ad_rectangle_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splash_screen_ad_rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/thank_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thank_you"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginBottom="250dp"
+        android:layout_marginEnd="33dp"
+        app:layout_constraintBottom_toBottomOf="@+id/splash_screen_ad_rectangle_1"
+        app:layout_constraintEnd_toEndOf="@+id/splash_screen_ad_rectangle_1"
+        app:layout_constraintStart_toStartOf="@+id/splash_screen_ad_rectangle_1"
+        app:layout_constraintTop_toTopOf="@+id/splash_screen_ad_rectangle_1" />
+
+    <ImageView
+        android:id="@+id/rating_card_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rating_card_logo"
+        android:layout_marginBottom="90dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/splash_screen_ad_rectangle_1"
+        app:layout_constraintEnd_toEndOf="@+id/splash_screen_ad_rectangle_1"
+        app:layout_constraintStart_toStartOf="@+id/splash_screen_ad_rectangle_1"
+        app:layout_constraintTop_toBottomOf="@id/thank_you" />
+
+    <ImageView
+        android:id="@+id/rate_us_drawer_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rate_us_drawer_icon"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="210dp"
+        app:layout_constraintBottom_toBottomOf="@+id/splash_screen_ad_rectangle_1"
+        app:layout_constraintEnd_toEndOf="@+id/splash_screen_ad_rectangle_1"
+        app:layout_constraintStart_toStartOf="@+id/splash_screen_ad_rectangle_1"
+        app:layout_constraintTop_toBottomOf="@+id/rating_card_logo" />
+
+    <ImageView
+        android:id="@+id/rate_us_drawer_icon_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rate_us_drawer_icon"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="117dp"
+        app:layout_constraintBottom_toBottomOf="@+id/splash_screen_ad_rectangle_1"
+        app:layout_constraintEnd_toEndOf="@+id/splash_screen_ad_rectangle_1"
+        app:layout_constraintStart_toStartOf="@+id/splash_screen_ad_rectangle_1"
+        app:layout_constraintTop_toBottomOf="@+id/rating_card_logo" />
+
+    <ImageView
+        android:id="@+id/rate_us_drawer_icon_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rate_us_drawer_icon"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/splash_screen_ad_rectangle_1"
+        app:layout_constraintEnd_toEndOf="@+id/splash_screen_ad_rectangle_1"
+        app:layout_constraintStart_toStartOf="@+id/splash_screen_ad_rectangle_1"
+        app:layout_constraintTop_toBottomOf="@+id/rating_card_logo" />
+
+    <ImageView
+        android:id="@+id/rate_us_drawer_icon_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rate_us_drawer_icon"
+        android:layout_marginBottom="60dp"
+        android:layout_marginStart="78dp"
+        app:layout_constraintBottom_toBottomOf="@+id/splash_screen_ad_rectangle_1"
+        app:layout_constraintEnd_toEndOf="@+id/splash_screen_ad_rectangle_1"
+        app:layout_constraintStart_toStartOf="@+id/splash_screen_ad_rectangle_1"
+        app:layout_constraintTop_toBottomOf="@+id/rating_card_logo" />
+
+    <ImageView
+        android:id="@+id/rate_us_drawer_icon_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rate_us_drawer_icon"
+        android:layout_marginBottom="60dp"
+        android:layout_marginStart="175dp"
+        app:layout_constraintBottom_toBottomOf="@+id/splash_screen_ad_rectangle_1"
+        app:layout_constraintEnd_toEndOf="@+id/splash_screen_ad_rectangle_1"
+        app:layout_constraintStart_toStartOf="@+id/splash_screen_ad_rectangle_1"
+        app:layout_constraintTop_toBottomOf="@+id/rating_card_logo" />
+
+    <ImageView
+        android:id="@+id/rate_us_card_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rate_us_card_button"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/splash_screen_ad_rectangle_1"
+        app:layout_constraintStart_toStartOf="@+id/splash_screen_ad_rectangle_1"
+        app:layout_constraintBottom_toBottomOf="@id/splash_screen_ad_rectangle_1"
+        app:layout_constraintTop_toBottomOf="@id/rate_us_drawer_icon_2"
+        tools:layout_editor_absoluteY="527dp" />
+
+    <TextView
+        android:id="@+id/not_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/not_now"
+        android:textColor="@color/white"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/splash_screen_ad_rectangle_1"
+        app:layout_constraintEnd_toEndOf="@+id/rate_us_card_button"
+        app:layout_constraintStart_toStartOf="@+id/rate_us_card_button"
+        app:layout_constraintTop_toTopOf="@+id/rate_us_card_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

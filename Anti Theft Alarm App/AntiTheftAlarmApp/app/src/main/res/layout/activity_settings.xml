@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_purple">
+
+    <ImageView
+        android:id="@+id/back_icon"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:src="@drawable/back_icon"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="26dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="29dp"
+        android:text="@string/settings"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/back_icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/settings_alarm_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/settings_screen_alarms_cards"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings" />
+
+    <ImageView
+        android:id="@+id/alarm_sound_card_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/alarm_sound_card_icon"
+        android:layout_marginEnd="255dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_alarm_card"
+        app:layout_constraintEnd_toEndOf="@+id/settings_alarm_card"
+        app:layout_constraintStart_toStartOf="@+id/settings_alarm_card"
+        app:layout_constraintTop_toTopOf="@+id/settings_alarm_card" />
+
+    <TextView
+        android:id="@+id/alarm_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alarm_sound"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="175dp"
+        app:layout_constraintEnd_toEndOf="@+id/settings_alarm_card"
+        app:layout_constraintStart_toEndOf="@+id/alarm_sound_card_icon"
+        app:layout_constraintTop_toTopOf="@+id/settings_alarm_card" />
+
+    <TextView
+        android:id="@+id/adjust_alarm_sound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/adjust_alarm_sound"
+        android:textColor="@color/grey"
+        android:textSize="12sp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="89dp"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_alarm_card"
+        app:layout_constraintEnd_toEndOf="@+id/settings_alarm_card"
+        app:layout_constraintStart_toStartOf="@+id/settings_alarm_card"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_sound" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:padding="16dp"
+        android:progress="50"
+        android:progressTint="@color/red"
+        android:thumbTint="@color/red"
+        app:layout_constraintEnd_toEndOf="@+id/settings_alarm_card"
+        app:layout_constraintBottom_toBottomOf="@id/settings_alarm_card"
+        app:layout_constraintStart_toStartOf="@+id/settings_alarm_card"
+        app:layout_constraintTop_toBottomOf="@id/adjust_alarm_sound" />
+
+    <ImageView
+        android:id="@+id/settings_screen_ad_rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splash_screen_ad_rectangle"
+        android:layout_marginBottom="270dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_alarm_card" />
+
+    <ImageView
+        android:id="@+id/alarm_duration_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/settings_screen_alarms_cards"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_screen_ad_rectangle" />
+
+    <ImageView
+        android:id="@+id/alarm_duration_card_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/alarm_duration_card_icon"
+        android:layout_marginEnd="260dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/alarm_duration_card"
+        app:layout_constraintEnd_toEndOf="@+id/alarm_duration_card"
+        app:layout_constraintStart_toStartOf="@+id/alarm_duration_card"
+        app:layout_constraintTop_toTopOf="@+id/alarm_duration_card" />
+
+    <TextView
+        android:id="@+id/alarm_duration_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alarm_duration"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="170dp"
+        app:layout_constraintBottom_toBottomOf="@+id/alarm_duration_card"
+        app:layout_constraintEnd_toEndOf="@+id/alarm_duration_card"
+        app:layout_constraintStart_toEndOf="@+id/alarm_duration_card_icon"
+        app:layout_constraintTop_toTopOf="@+id/alarm_duration_card" />
+
+    <TextView
+        android:id="@+id/choose_alarm_duration_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_alarm_duration"
+        android:textColor="@color/grey"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="82dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/alarm_duration_card"
+        app:layout_constraintEnd_toEndOf="@+id/alarm_duration_card"
+        app:layout_constraintStart_toStartOf="@+id/alarm_duration_card"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_duration_tv" />
+
+    <ImageView
+        android:id="@+id/settings_cards_opening_dialougue_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_cards_opening_dialougue_icon"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="110dp"
+        app:layout_constraintBottom_toBottomOf="@+id/alarm_duration_card"
+        app:layout_constraintEnd_toEndOf="@+id/alarm_duration_card"
+        app:layout_constraintStart_toEndOf="@+id/alarm_duration_tv"
+        app:layout_constraintTop_toTopOf="@+id/alarm_duration_card" />
+
+    <ImageView
+        android:id="@+id/alarm_tone_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        android:src="@drawable/settings_screen_alarms_cards"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_duration_card"
+        app:layout_constraintVertical_bias="0.164" />
+
+    <ImageView
+        android:id="@+id/settings_alarm_tone_card_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_alarm_tone_card_icon"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="258dp"
+        app:layout_constraintBottom_toBottomOf="@+id/alarm_tone_card"
+        app:layout_constraintEnd_toEndOf="@+id/alarm_tone_card"
+        app:layout_constraintStart_toStartOf="@+id/alarm_tone_card"
+        app:layout_constraintTop_toTopOf="@+id/alarm_tone_card" />
+
+    <TextView
+        android:id="@+id/alarm_tone_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alarm_tone"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="190dp"
+        app:layout_constraintBottom_toBottomOf="@+id/alarm_tone_card"
+        app:layout_constraintEnd_toEndOf="@+id/alarm_tone_card"
+        app:layout_constraintStart_toEndOf="@+id/settings_alarm_tone_card_icon"
+        app:layout_constraintTop_toTopOf="@+id/alarm_tone_card" />
+
+    <TextView
+        android:id="@+id/choose_alarm_tone_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_alarm_tone"
+        android:textColor="@color/grey"
+        android:textSize="12sp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/alarm_tone_card"
+        app:layout_constraintEnd_toEndOf="@+id/alarm_tone_card"
+        app:layout_constraintStart_toStartOf="@+id/alarm_tone_card"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_tone_tv" />
+
+    <ImageView
+        android:id="@+id/settings_cards_opening_dialougue_icon_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/settings_cards_opening_dialougue_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/alarm_tone_card"
+        app:layout_constraintEnd_toEndOf="@+id/alarm_tone_card"
+        app:layout_constraintStart_toEndOf="@+id/alarm_tone_tv"
+        app:layout_constraintTop_toTopOf="@+id/alarm_tone_card" />
+
+    <ImageView
+        android:id="@+id/pin_code_settings_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_screen_alarms_cards"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_tone_card" />
+
+    <ImageView
+        android:id="@+id/settings_pin_code_settings_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_pin_code_settings_icon"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="256dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_code_settings_card"
+        app:layout_constraintEnd_toEndOf="@+id/pin_code_settings_card"
+        app:layout_constraintStart_toStartOf="@+id/pin_code_settings_card"
+        app:layout_constraintTop_toTopOf="@+id/pin_code_settings_card" />
+
+    <TextView
+        android:id="@+id/pin_code_setting_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pin_code_setting"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="30dp"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_code_settings_card"
+        app:layout_constraintEnd_toEndOf="@+id/pin_code_settings_card"
+        app:layout_constraintStart_toEndOf="@+id/settings_pin_code_settings_icon"
+        app:layout_constraintTop_toTopOf="@+id/pin_code_settings_card" />
+
+    <TextView
+        android:id="@+id/adjust_pin_code_setting_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/adjust_pin_code_setting"
+        android:textColor="@color/grey"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="134dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_code_settings_card"
+        app:layout_constraintEnd_toEndOf="@+id/pin_code_settings_card"
+        app:layout_constraintStart_toEndOf="@+id/settings_pin_code_settings_icon"
+        app:layout_constraintTop_toBottomOf="@+id/pin_code_setting_tv" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings_cards_opening_dialougue_icon"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="95dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pin_code_settings_card"
+        app:layout_constraintEnd_toEndOf="@+id/pin_code_settings_card"
+        app:layout_constraintStart_toEndOf="@+id/pin_code_setting_tv"
+        app:layout_constraintTop_toTopOf="@+id/pin_code_settings_card" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

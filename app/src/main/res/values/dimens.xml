@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="custom_dialog_height">600dp</dimen>
+    <dimen name="custom_dialog_width">340dp</dimen>
+    <dimen name="custom_dialog_height_1">530dp</dimen>
+    <dimen name="margin_start_reenter_pin">130dp</dimen>
+    <dimen name="spacing_between_rows">0dp</dimen>
+    <dimen name="margin_size">10dp</dimen>
+    <dimen name="stop_text_view_start_margin">163dp</dimen>
+    <dimen name="your_margin_size">38dp</dimen>
+    <dimen name="your_margin_top">100dp</dimen>
+    <dimen name="your_margin_start">242dp</dimen>
+    <dimen name="your_margin_start_1">7dp</dimen>
+    <dimen name="your_margin_start_facebook">225dp</dimen>
+    <dimen name="your_margin_start_whatsapp">4dp</dimen>
+    <dimen name="your_margin_end_share">252dp</dimen>
+</resources>
